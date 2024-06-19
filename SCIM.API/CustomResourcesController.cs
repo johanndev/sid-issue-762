@@ -12,40 +12,37 @@ using SimpleIdServer.Scim.Queries;
 
 namespace SCIM.API
 {
-    public partial class Program
-    {
 
-        public class CustomResourcesController : BaseApiController
-        {
-            public CustomResourcesController(
-                IAddRepresentationCommandHandler addRepresentationCommandHandler,
-                IDeleteRepresentationCommandHandler deleteRepresentationCommandHandler,
-                IReplaceRepresentationCommandHandler replaceRepresentationCommandHandler,
-                IPatchRepresentationCommandHandler patchRepresentationCommandHandler,
-                ISearchRepresentationsQueryHandler searchRepresentationsQueryHandler,
-                IGetRepresentationQueryHandler getRepresentationQueryHandler,
-                IAttributeReferenceEnricher attributeReferenceEnricher,
-                IOptionsMonitor<SCIMHostOptions> options,
-                ILogger<CustomResourcesController> logger,
-                IBusControl busControl,
-                IResourceTypeResolver resourceTypeResolver,
-                IUriProvider uriProvider,
-                IRealmRepository realmRepository) : base(
-                    "CustomResource",
-                    addRepresentationCommandHandler,
-                    deleteRepresentationCommandHandler,
-                    replaceRepresentationCommandHandler,
-                    patchRepresentationCommandHandler,
-                    searchRepresentationsQueryHandler,
-                    getRepresentationQueryHandler,
-                    attributeReferenceEnricher,
-                    options,
-                    logger,
-                    busControl,
-                    resourceTypeResolver,
-                    uriProvider,
-                    realmRepository)
-            { }
-        }
+    public class CustomResourcesController : BaseApiController
+    {
+        public CustomResourcesController(
+            IAddRepresentationCommandHandler addRepresentationCommandHandler,
+            IDeleteRepresentationCommandHandler deleteRepresentationCommandHandler,
+            IReplaceRepresentationCommandHandler replaceRepresentationCommandHandler,
+            IPatchRepresentationCommandHandler patchRepresentationCommandHandler,
+            ISearchRepresentationsQueryHandler searchRepresentationsQueryHandler,
+            IGetRepresentationQueryHandler getRepresentationQueryHandler,
+            IAttributeReferenceEnricher attributeReferenceEnricher,
+            IOptionsMonitor<SCIMHostOptions> options,
+            ILogger<CustomResourcesController> logger,
+            IBusControl busControl,
+            IResourceTypeResolver resourceTypeResolver,
+            IUriProvider uriProvider,
+            IRealmRepository realmRepository) : base(
+                "CustomResource",
+                addRepresentationCommandHandler,
+                deleteRepresentationCommandHandler,
+                replaceRepresentationCommandHandler,
+                patchRepresentationCommandHandler,
+                searchRepresentationsQueryHandler,
+                getRepresentationQueryHandler,
+                attributeReferenceEnricher,
+                options,
+                logger,
+                busControl,
+                resourceTypeResolver,
+                uriProvider,
+                realmRepository)
+        { }
     }
 }

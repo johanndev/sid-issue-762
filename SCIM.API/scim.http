@@ -8,5 +8,8 @@ GET {{host}}CustomResources
 Authorization: Bearer {{apiKey}}
 ###
 
-GET {{host}}actiondescriptors
+GET {{host}}routedebug/actiondescriptors
+###
+
+GET {{host}}routedebug/scimendpoints
 ###
