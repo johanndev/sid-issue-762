@@ -7,3 +7,6 @@ Authorization: Bearer {{apiKey}}
 GET {{host}}CustomResources
 Authorization: Bearer {{apiKey}}
 ###
+
+GET {{host}}actiondescriptors
+###

@@ -31,7 +31,7 @@ namespace SCIM.API
                 IResourceTypeResolver resourceTypeResolver,
                 IUriProvider uriProvider,
                 IRealmRepository realmRepository) : base(
-                    "CustomResources",
+                    "CustomResource",
                     addRepresentationCommandHandler,
                     deleteRepresentationCommandHandler,
                     replaceRepresentationCommandHandler,

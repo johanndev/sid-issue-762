@@ -3,6 +3,8 @@
 using AspNetCore.Authentication.ApiKey;
 using MassTransit;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +29,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 
 namespace SCIM.API
 {
@@ -243,6 +246,7 @@ namespace SCIM.API
             });
             InitializeDatabase(builder, app);
             app.UseAuthentication();
+            app.UseRouting();
             app.UseMvc(e =>
             {
                 e.UseStandardScimEdp("CustomResources", false);
