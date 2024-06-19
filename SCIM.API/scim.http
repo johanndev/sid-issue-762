@@ -1,4 +1,8 @@
-# For more info on HTTP files go to https://aka.ms/vs/httpfile
+# @name get_Users
+GET {{host}}Users
+Authorization: Bearer {{apiKey}}
+###
+
 # @name get_customResources
 GET {{host}}CustomResources
 Authorization: Bearer {{apiKey}}
