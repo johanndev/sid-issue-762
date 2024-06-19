@@ -1,0 +1,5 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+# @name get_customResources
+GET {{host}}CustomResources
+Authorization: Bearer {{apiKey}}
+###
